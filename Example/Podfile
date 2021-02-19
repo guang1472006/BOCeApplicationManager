@@ -1,0 +1,9 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'BOCeApplicationManager' do
+
+  pod 'BOCeApplicationManager', :git=> 'https://github.com/guang1472006/BOCeApplicationManager.git'
+
+end
