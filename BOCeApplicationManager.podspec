@@ -64,6 +64,7 @@ Pod::Spec.new do |s|
   contoller.dependency 'WMZDialog', '~> 1.2.0'
   contoller.dependency 'UMengAnalytics-NO-IDFA', '~> 4.2.5'
   contoller.dependency 'AEGuideView', '~> 1.1.0'
+  contoller.dependency 'SVGKit', '~> 3.0.0-beta3'
   end
   
   # BOCePay
