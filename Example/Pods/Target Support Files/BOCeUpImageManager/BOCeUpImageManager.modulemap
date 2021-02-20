@@ -1,6 +1,0 @@
-framework module BOCeUpImageManager {
-  umbrella header "BOCeUpImageManager-umbrella.h"
-
-  export *
-  module * { export * }
-}
