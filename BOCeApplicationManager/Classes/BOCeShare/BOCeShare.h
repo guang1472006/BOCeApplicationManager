@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BOCeApplicationManager.h"
-#import <WXApi.h>
+#import "WXApi.h"
 #import <WeiboSDK.h>
 #import <TencentOpenAPI/TencentOAuth.h>
 #import <TencentOpenAPI/QQApiInterface.h>
