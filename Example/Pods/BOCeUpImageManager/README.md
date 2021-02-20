@@ -1,2 +1,0 @@
-# BOCeUpImageManager
-A Image UpLoadingManager
