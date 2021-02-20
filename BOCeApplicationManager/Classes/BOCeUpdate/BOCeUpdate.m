@@ -34,8 +34,17 @@
                     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[response.content objectForKey:@"downloadUrl"]]];
                 }]];
                 
-                [controller addAction:[UIAlertAction actionWithTitle:@"关闭" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+                [controller addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action){
+                    
+                    //关闭视图
                     [[UIApplication sharedApplication].delegate.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
+                    
+                    //加载导航图与主页面
+                    BOCeContoller *vc=[[BOCeContoller alloc]init];
+                    vc.startLoadRootVC = ^{
+                        NSLog(@"OK Load Root VC");
+                    };
+                    [vc application:application didFinishLaunchingWithOptions:launchOptions];
                 }]];
                 
                 
@@ -63,7 +72,12 @@
                 
             }else{//不更新
                 
-                
+                //加载导航图与主页面
+                BOCeContoller *vc=[[BOCeContoller alloc]init];
+                vc.startLoadRootVC = ^{
+                    NSLog(@"OK Load Root VC");
+                };
+                [vc application:application didFinishLaunchingWithOptions:launchOptions];
             }
         }
     }] ;

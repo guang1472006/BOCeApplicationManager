@@ -10,6 +10,7 @@
 #import <YYCategories/YYCategories.h>
 #import "BOCeApplicationManager.h"
 #import "BOCeNetManager.h"
+#import "BOCeContoller.h"
 
 typedef NS_ENUM(NSUInteger, UpdateFlag) {
     UpdateFlag_Need=1,     //强制更新
