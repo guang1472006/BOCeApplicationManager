@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "BOCeApplicationManager.h"
-#import <WXApi.h>
+#import "WXApi.h"
 #import <AlipaySDK/AlipaySDK.h>
 #import "WXService.h"
 

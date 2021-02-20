@@ -1,0 +1,14 @@
+${PODS_ROOT}/Target Support Files/Pods-BOCeApplicationManager/Pods-BOCeApplicationManager-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AEGuideView/AEGuideView.framework
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/AliyunOSSiOS/AliyunOSSiOS.framework
+${BUILT_PRODUCTS_DIR}/Appirater/Appirater.framework
+${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework
+${BUILT_PRODUCTS_DIR}/BOCeNetManager/BOCeNetManager.framework
+${BUILT_PRODUCTS_DIR}/BOCeUpImageManager/BOCeUpImageManager.framework
+${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/TABAnimated/TABAnimated.framework
+${BUILT_PRODUCTS_DIR}/WMZDialog/WMZDialog.framework
+${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework
+${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework
+${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework

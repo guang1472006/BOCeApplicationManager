@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <BOCeApplicationManager.h>
 
 @interface AppDelegate ()
 
@@ -13,28 +14,67 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+//启动
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    NSString *path=[[NSBundle mainBundle] pathForResource:@"BOCeApplication" ofType:@"plist"];
+    [[BOCeApplicationManager sharedInstance] loadModulesWithPlistFile:path];
+    for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module respondsToSelector:_cmd]){
+            [module application:application didFinishLaunchingWithOptions:launchOptions];
+        }
+    }
     return YES;
 }
 
-
-#pragma mark - UISceneSession lifecycle
-
-
-- (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
-    // Called when a new scene session is being created.
-    // Use this method to select a configuration to create the new scene with.
-    return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
+//通知
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module respondsToSelector:_cmd]) {
+            [module application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+        }
+    }
 }
 
-
-- (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
-    // Called when the user discards a scene session.
-    // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-    // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+//通知
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module respondsToSelector:_cmd]) {
+            [module application:application didFailToRegisterForRemoteNotificationsWithError:error];
+        }
+    }
 }
 
+//通知
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler {
+    for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module respondsToSelector:_cmd]) {
+            [module application:application didReceiveRemoteNotification:userInfo fetchCompletionHandler:completionHandler];
+        }
+    }
+}
+
+//通知
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+    for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module respondsToSelector:_cmd]) {
+            [module application:application didReceiveRemoteNotification:userInfo];
+        }
+    }
+}
+
+//禁用旋转
+- (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(nullable UIWindow *)window{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+//打开APP
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options{
+    for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module respondsToSelector:_cmd]){
+            [module application:app openURL:url options:options];
+        }
+    }
+    return YES;
+}
 
 @end

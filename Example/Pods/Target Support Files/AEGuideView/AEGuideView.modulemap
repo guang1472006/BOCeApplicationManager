@@ -1,0 +1,6 @@
+framework module AEGuideView {
+  umbrella header "AEGuideView-umbrella.h"
+
+  export *
+  module * { export * }
+}
