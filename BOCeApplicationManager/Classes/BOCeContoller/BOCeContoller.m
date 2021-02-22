@@ -11,7 +11,7 @@
 
 @implementation UIImage (SVGManager)
 
-+ (UIImage *)svgImageNamed:(NSString *)name size:(CGSize)size {
++ (UIImage *)svgImageNamed:(NSString *)name size:(CGSize)size{
     SVGKImage *svgImage = [SVGKImage imageNamed:name];
     svgImage.size = size;
     return svgImage.UIImage;
@@ -33,7 +33,7 @@
     NSMutableArray *images = [[NSMutableArray alloc]init];
     for (int i=0; i<4; i++){
         UIImage *image0=[UIImage svgImageNamed:[NSString stringWithFormat:@"Guidepage%dXR",i] size:CGSizeMake([UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-        if (image0) {
+        if (image0){
             [images addObject:image0];
         }
     }
@@ -68,7 +68,7 @@
                     know.titleLabel.font = [UIFont systemFontOfSize:14.0f];
                     know.frame = CGRectMake(0, CGRectGetMaxY(web.frame), mainView.frame.size.width, 44);
                     [know setTitle:@"同意" forState:UIControlStateNormal];
-                    //                [know setTitleColor:UIColorFromHex(0x333333) forState:UIControlStateNormal];
+                    [know setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
                     [know addTarget:self action:@selector(ButtonAct:) forControlEvents:UIControlEventTouchUpInside];
                     
                     mainView.layer.masksToBounds = YES;

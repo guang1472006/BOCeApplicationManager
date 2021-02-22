@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA1F0B7425E3977C0018C0EE /* Guidepage3XR.svg in Resources */ = {isa = PBXBuildFile; fileRef = CA1F0B7125E3977B0018C0EE /* Guidepage3XR.svg */; };
+		CA1F0B7525E3977C0018C0EE /* Guidepage1XR.svg in Resources */ = {isa = PBXBuildFile; fileRef = CA1F0B7225E3977C0018C0EE /* Guidepage1XR.svg */; };
+		CA1F0B7625E3977C0018C0EE /* Guidepage2XR.svg in Resources */ = {isa = PBXBuildFile; fileRef = CA1F0B7325E3977C0018C0EE /* Guidepage2XR.svg */; };
+		CA1F0B7B25E3982A0018C0EE /* Guidepage0XR.svg in Resources */ = {isa = PBXBuildFile; fileRef = CA1F0B7A25E3982A0018C0EE /* Guidepage0XR.svg */; };
 		CA72F91B25DFA3E600BB1271 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA72F91A25DFA3E600BB1271 /* AppDelegate.m */; };
 		CA72F92125DFA3E600BB1271 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA72F92025DFA3E600BB1271 /* ViewController.m */; };
 		CA72F92425DFA3E600BB1271 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA72F92225DFA3E600BB1271 /* Main.storyboard */; };
@@ -15,6 +19,7 @@
 		CA72F92C25DFA3E800BB1271 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA72F92B25DFA3E800BB1271 /* main.m */; };
 		CA72F93625DFA3E800BB1271 /* BOCeApplicationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA72F93525DFA3E800BB1271 /* BOCeApplicationManagerTests.m */; };
 		CA72F94125DFA3E800BB1271 /* BOCeApplicationManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA72F94025DFA3E800BB1271 /* BOCeApplicationManagerUITests.m */; };
+		CA74CE6625E10DEC001AC022 /* BOCeApplication.plist in Resources */ = {isa = PBXBuildFile; fileRef = CA74CE6525E10DEC001AC022 /* BOCeApplication.plist */; };
 		D47A96B6D3363995B099D2C2 /* Pods_BOCeApplicationManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFE79D5C0FCF3F16D0DF359 /* Pods_BOCeApplicationManager.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +44,10 @@
 		316E18ABBA652E00A74C15FE /* Pods-BOCeApplicationManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOCeApplicationManager.release.xcconfig"; path = "Target Support Files/Pods-BOCeApplicationManager/Pods-BOCeApplicationManager.release.xcconfig"; sourceTree = "<group>"; };
 		5DFE79D5C0FCF3F16D0DF359 /* Pods_BOCeApplicationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BOCeApplicationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C47D1FD2E7E806A23581FB /* Pods-BOCeApplicationManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BOCeApplicationManager.debug.xcconfig"; path = "Target Support Files/Pods-BOCeApplicationManager/Pods-BOCeApplicationManager.debug.xcconfig"; sourceTree = "<group>"; };
+		CA1F0B7125E3977B0018C0EE /* Guidepage3XR.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Guidepage3XR.svg; sourceTree = "<group>"; };
+		CA1F0B7225E3977C0018C0EE /* Guidepage1XR.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Guidepage1XR.svg; sourceTree = "<group>"; };
+		CA1F0B7325E3977C0018C0EE /* Guidepage2XR.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Guidepage2XR.svg; sourceTree = "<group>"; };
+		CA1F0B7A25E3982A0018C0EE /* Guidepage0XR.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Guidepage0XR.svg; sourceTree = "<group>"; };
 		CA72F91625DFA3E600BB1271 /* BOCeApplicationManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOCeApplicationManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA72F91925DFA3E600BB1271 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA72F91A25DFA3E600BB1271 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -55,6 +64,7 @@
 		CA72F93C25DFA3E800BB1271 /* BOCeApplicationManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BOCeApplicationManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA72F94025DFA3E800BB1271 /* BOCeApplicationManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BOCeApplicationManagerUITests.m; sourceTree = "<group>"; };
 		CA72F94225DFA3E800BB1271 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA74CE6525E10DEC001AC022 /* BOCeApplication.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = BOCeApplication.plist; path = BOCeApplicationManager/BOCeApplication.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,11 @@
 		CA72F91825DFA3E600BB1271 /* BOCeApplicationManager */ = {
 			isa = PBXGroup;
 			children = (
+				CA1F0B7A25E3982A0018C0EE /* Guidepage0XR.svg */,
+				CA1F0B7225E3977C0018C0EE /* Guidepage1XR.svg */,
+				CA1F0B7325E3977C0018C0EE /* Guidepage2XR.svg */,
+				CA1F0B7125E3977B0018C0EE /* Guidepage3XR.svg */,
+				CA74CE6525E10DEC001AC022 /* BOCeApplication.plist */,
 				CA72F91925DFA3E600BB1271 /* AppDelegate.h */,
 				CA72F91A25DFA3E600BB1271 /* AppDelegate.m */,
 				CA72F91F25DFA3E600BB1271 /* ViewController.h */,
@@ -261,8 +276,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA1F0B7525E3977C0018C0EE /* Guidepage1XR.svg in Resources */,
+				CA74CE6625E10DEC001AC022 /* BOCeApplication.plist in Resources */,
 				CA72F92925DFA3E800BB1271 /* LaunchScreen.storyboard in Resources */,
+				CA1F0B7B25E3982A0018C0EE /* Guidepage0XR.svg in Resources */,
+				CA1F0B7425E3977C0018C0EE /* Guidepage3XR.svg in Resources */,
 				CA72F92625DFA3E800BB1271 /* Assets.xcassets in Resources */,
+				CA1F0B7625E3977C0018C0EE /* Guidepage2XR.svg in Resources */,
 				CA72F92425DFA3E600BB1271 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +550,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boce.BOCeApplicationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -550,6 +571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.5.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.boce.BOCeApplicationManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

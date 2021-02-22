@@ -7,6 +7,8 @@
 
 #import "AppDelegate.h"
 #import <BOCeApplicationManager.h>
+#import <BOCeUpdate.h>
+#import <BOCeContoller.h>
 
 @interface AppDelegate ()
 
@@ -19,6 +21,12 @@
     NSString *path=[[NSBundle mainBundle] pathForResource:@"BOCeApplication" ofType:@"plist"];
     [[BOCeApplicationManager sharedInstance] loadModulesWithPlistFile:path];
     for (id<BOCeApplicationDelegate> module in [[BOCeApplicationManager sharedInstance] allModules]){
+        if ([module isKindOfClass:NSClassFromString(@"BOCeContoller")]) {
+            BOCeContoller *vc=(BOCeContoller *)module;
+            vc.startLoadRootVC = ^{
+                NSLog(@"开始加载主视图");
+            };
+        }
         if ([module respondsToSelector:_cmd]){
             [module application:application didFinishLaunchingWithOptions:launchOptions];
         }

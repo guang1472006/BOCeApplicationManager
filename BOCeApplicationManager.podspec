@@ -30,9 +30,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'BOCeApplicationManager/Classes/*'
   
-  s.resource_bundles = {
-      'BOCeApplicationManager' => ['BOCeApplicationManager/Assets/*.plist']
-  }
+  #s.resource_bundles = {
+  #    'BOCeApplicationManager' => ['BOCeApplicationManager/Assets/*.plist']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

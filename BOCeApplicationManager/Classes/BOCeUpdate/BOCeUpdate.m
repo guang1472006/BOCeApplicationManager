@@ -40,11 +40,10 @@
                     [[UIApplication sharedApplication].delegate.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
                     
                     //加载导航图与主页面
-                    BOCeContoller *vc=[[BOCeContoller alloc]init];
-                    vc.startLoadRootVC = ^{
-                        NSLog(@"OK Load Root VC");
-                    };
-                    [vc application:application didFinishLaunchingWithOptions:launchOptions];
+                    if (self.UpdateDidFinish) {
+                        self.UpdateDidFinish();
+                    }
+        
                 }]];
                 
                 
@@ -71,13 +70,9 @@
                 });
                 
             }else{//不更新
-                
-                //加载导航图与主页面
-                BOCeContoller *vc=[[BOCeContoller alloc]init];
-                vc.startLoadRootVC = ^{
-                    NSLog(@"OK Load Root VC");
-                };
-                [vc application:application didFinishLaunchingWithOptions:launchOptions];
+                if (self.UpdateDidFinish) {
+                    self.UpdateDidFinish();
+                }
             }
         }
     }] ;

@@ -18,11 +18,15 @@ typedef NS_ENUM(NSUInteger, UpdateFlag) {
     UpdateFlag_update=0,   //可选更新
 };
 
+typedef void(^BOCeUpdateFinish)(void);
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BOCeUpdate : NSObject<BOCeApplicationDelegate>
 
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:( nullable NSDictionary<UIApplicationLaunchOptionsKey,id> *)launchOptions;
+
+@property(strong,nonatomic)BOCeUpdateFinish UpdateDidFinish;
 
 @end
 
